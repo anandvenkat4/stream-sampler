@@ -34,9 +34,9 @@ def main():
         char = sys.stdin.read(1)
 
         if char == '' or char == "\n":
-            print(''.join(sample))
+            return ''.join(sample)
             break    
         k, sample = reservoir.send(char)
    
 if __name__== "__main__":
-    main()
+    print(main())
