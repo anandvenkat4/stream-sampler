@@ -13,12 +13,14 @@ def reservoir_sampling(size):
         elif k < size:
             sample[k] = item
 
-reservoir = reservoir_sampling(5)
+reservoir = reservoir_sampling(int(sys.argv[1]))
 next(reservoir)
 
 while True:
-    line = sys.stdin.read(1)
-    if line == "\n":
+    char = sys.stdin.read(1)
+
+    if char == '' or char == "\n":
+        print(''.join(sample))
         break    
-    k, sample = reservoir.send(line)
-    print(k, sample)
+    k, sample = reservoir.send(char)
+   
