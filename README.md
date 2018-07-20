@@ -9,3 +9,7 @@ Assumptions Made:
 1. It is assumed that the sample size K is always less than N, else the program would return the input string
 2. The programming environment used is python3.5
 
+Sample Run:
+
+<img width="1436" alt="screen shot 2018-07-21 at 12 13 17 am" src="https://user-images.githubusercontent.com/3582757/43019696-7ff4211e-8c7b-11e8-9440-50560ab75b1b.png">
+
